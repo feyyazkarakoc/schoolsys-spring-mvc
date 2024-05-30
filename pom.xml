@@ -1,0 +1,106 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.tpe</groupId>
+  <artifactId>StudentManagementSystem</artifactId>
+  <packaging>war</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>StudentManagementSystem Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+
+
+  <properties>
+    <failOnMissingWebXml>false</failOnMissingWebXml>
+    <java.version>11</java.version>
+    <maven.compiler.source>${java.version}</maven.compiler.source>
+    <maven.compiler.target>${java.version}</maven.compiler.target>
+    <spring.version>5.3.23</spring.version>
+    <hibernate.version>5.6.10.Final</hibernate.version>
+    <hibernate.validator>6.2.3.Final</hibernate.validator>
+    <postgresql.connector.version>42.3.6</postgresql.connector.version>
+    <servlets.version>4.0.1</servlets.version>
+    <jsp.version>2.3.1</jsp.version>
+    <jstl.version>1.2.1</jstl.version>
+    <taglib.version>1.1.2</taglib.version>
+    <jackson.version>2.13.3</jackson.version>
+  </properties>
+
+
+  <dependencies>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- Spring MVC Dependency -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-webmvc</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+
+    <!-- Hibernate Core -->
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-core</artifactId>
+      <version>${hibernate.version}</version>
+    </dependency>
+
+    <!--Orm Dependency -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-orm</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+
+    <!-- Validator Dependency -->
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-validator</artifactId>
+      <version>${hibernate.validator}</version>
+    </dependency>
+
+    <!--PostgreSQL driver Dependency -->
+    <dependency>
+      <groupId>org.postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <version>${postgresql.connector.version}</version>
+    </dependency>
+
+    <!-- Servlet Dependency -->
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>${servlets.version}</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>javax.servlet.jsp</groupId>
+      <artifactId>javax.servlet.jsp-api</artifactId>
+      <version>${jsp.version}</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <!-- Tag Dependency -->
+    <dependency>
+      <groupId>javax.servlet.jsp.jstl</groupId>
+      <artifactId>javax.servlet.jsp.jstl-api</artifactId>
+      <version>${jstl.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>taglibs</groupId>
+      <artifactId>standard</artifactId>
+      <version>${taglib.version}</version>
+    </dependency>
+
+
+  </dependencies>
+  <build>
+    <finalName>StudentManagementSystem</finalName>
+  </build>
+</project>
