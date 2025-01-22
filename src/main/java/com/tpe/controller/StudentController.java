@@ -15,7 +15,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 @Controller
-@RequestMapping("/students") //http:localhost:8080/StudentManagementSystem/students/...
+@RequestMapping("/students") //http:localhost:8080/StudentManagementSystem/students/
 public class StudentController {
 
 
